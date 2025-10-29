@@ -4,7 +4,7 @@ Library    RequestsLibrary
 *** Keywords ***
 
 Criar um novo filme como admin
-    [Documentation]    Envia uma requisição POST /movies com dados válidos de um novo filme usando token de admin.
+    
 
     ${headers}=    Create Dictionary    Authorization=${ADMIN_TOKEN}    Content-Type=application/json
     ${dados_filme}=    Create Dictionary
@@ -27,7 +27,7 @@ Criar um novo filme como admin
     Set Test Variable    ${ID_FILME_CRIADO}    ${response.json()['data']['_id']}
 
 Listar todos os filmes
-    [Documentation]    Envia requisição GET /movies sem autenticação e valida se a lista de filmes é retornada com sucesso.
+   
 
     Create Session    filmes    ${BASE_URL}
     ${response}=    GET On Session    filmes    /movies    expected_status=ANY
@@ -39,7 +39,6 @@ Listar todos os filmes
     Log    🎥 Total de filmes retornados: ${response.json()['count']}
 
 Criar um novo filme como usuário comum
-    [Documentation]    Tenta criar um filme com um usuário comum e valida se a resposta é 403 Forbidden.
 
     # Criar e autenticar usuário comum
     ${timestamp}=    Get Time    epoch
