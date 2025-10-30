@@ -9,28 +9,50 @@ A automação foi desenvolvida utilizando o **Robot Framework**, aplicando boas 
 ## ⚙️ Estrutura do Projeto
 
 ```
-📦 cinema-challenge-tests
+cinema-challenge-tests
 ├── README.md
 ├── requirements.txt
 ├── .github/
 │   └── workflows/
-│       └── b.yml
+│       └── ci-tests.yml
 ├── tests/
+│   ├── .gitignore
+│   ├── robot_tests_suite.robot
 │   ├── api/
 │   │   ├── resources.robot
 │   │   ├── auth_tests.robot
 │   │   ├── movies_tests.robot
+│   │   ├── reservation_tests.robot
+│   │   ├── session_tests.robot
+│   │   ├── theater_tests.robot
+│   │   ├── users_admin_tests.robot
 │   │   └── tickets_tests.robot
+│   ├── resources/
+│   │   ├── keywords/
+│   │   │   ├── auth_keywords.resource
+│   │   │   ├── common_keywords.robot
+│   │   │   ├── movie_keywords.resource
+│   │   │   ├── reservation_keywords.resource
+│   │   │   ├── session_keywords.resource
+│   │   │   ├── teardowns_keywords.robot
+│   │   │   ├── theater_keywords.resource
+│   │   │   └── users_admin_keywords.resource
+│   │   └── variables/
+│   │       └── env_variables.robot
 │   └── ui/
+│       ├── resources_ui.robot
 │       ├── pages/
-│       │   ├── login_page.robot
-│       │   └── home_page.robot
+│       │   ├── HomePage.robot
+│       │   └── CheckoutPage.robot
+│       ├── e2e/
+│       │   └── buy_ticket.robot
 │       └── ui_flow_tests.robot
 └── docs/
     ├── mapa_mental.pdf
     ├── Relatorio final de testes.pdf
-    ├── plano_de_testes.pdf
+    ├── plano_de_teste.pdf
     └── prompts.md
+
 ```
 
 ---
