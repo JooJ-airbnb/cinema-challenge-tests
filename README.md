@@ -1,10 +1,9 @@
-# 🎬 Projeto de Automação de Testes - Cinema Challenge  
+# 🎬 Cinema Challenge - Projeto de Automação de Testes
 
 ## 🧩 Descrição do Projeto
-Este projeto tem como objetivo a **automação de testes funcionais** para o sistema do **Cinema Challenge**, composto por uma API (back-end) e um front-end web.  
-A automação foi desenvolvida utilizando o **Robot Framework**, aplicando boas práticas e princípios de reutilização de código.
+Este projeto tem como objetivo a automação de testes funcionais para o sistema **Cinema Challenge**, composto por uma **API (back-end)** e um **front-end web**.  
+A automação foi desenvolvida utilizando **Robot Framework**, aplicando boas práticas e princípios de **reutilização de código**.
 
----
 
 ## ⚙️ Estrutura do Projeto
 
@@ -57,12 +56,15 @@ cinema-challenge-tests
 
 ---
 
-## 🧠 Estratégia de Testes
+> ⚠️ **Observação:** a pasta `results/` mencionada nos comandos será criada automaticamente pelo Robot Framework durante a execução dos testes. Não é necessário criá-la manualmente.
 
+---
+
+## 🧠 Estratégia de Testes
 - **Tipo:** Funcional e regressão  
 - **Nível:** API e UI  
 - **Abordagem:** Data-driven  
-- **Ferramentas:**  
+- **Ferramentas utilizadas:**
   - Robot Framework  
   - RequestsLibrary  
   - BrowserLibrary  
@@ -75,40 +77,41 @@ cinema-challenge-tests
 ## 🚀 Instalação e Execução
 
 ### Pré-requisitos:
-- Python 3.10+  
+- Python 3.10 ou superior  
 - Git instalado  
 
 ### Instalar dependências:
 ```bash
 pip install -r requirements.txt
-```
-
-### Executar testes:
-```bash
+Executar testes:
+bash
+Copiar código
 robot -d results tests/api
 robot -d results tests/ui
-```
+🧪 Cenários Principais
+API
+Login e autenticação
 
----
+Consulta de filmes
 
-## 🧪 Cenários Principais
+Criação e cancelamento de ingressos
 
-### API
-- Login e autenticação  
-- Consulta de filmes  
-- Criação e cancelamento de ingressos  
+Front-End
+Login e navegação
 
-### Front-End
-- Login e navegação  
-- Compra de ingresso (fluxo completo)  
+Compra de ingresso (fluxo completo)
 
----
+💡 Boas Práticas Aplicadas
+Page Objects (UI) e Service Objects (API)
 
-## 💡 Boas Práticas Aplicadas
-- Page Objects (UI) e Service Objects (API)  
-- Estrutura modular e reutilizável  
-- Cenários independentes  
-- Validações dinâmicas com Faker  
-- Integração contínua com GitHub Actions  
+Estrutura modular e reutilizável
 
----
+Cenários independentes
+
+Validações dinâmicas com Faker
+
+Integração contínua com GitHub Actions
+
+css
+Copiar código
+
