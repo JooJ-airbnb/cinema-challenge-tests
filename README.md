@@ -14,7 +14,7 @@ A automação foi desenvolvida utilizando o **Robot Framework**, aplicando boas 
 ├── requirements.txt
 ├── .github/
 │   └── workflows/
-│       └── ci.yml
+│       └── b.yml
 ├── tests/
 │   ├── api/
 │   │   ├── resources.robot
@@ -27,10 +27,10 @@ A automação foi desenvolvida utilizando o **Robot Framework**, aplicando boas 
 │       │   └── home_page.robot
 │       └── ui_flow_tests.robot
 └── docs/
-    ├── mapa_mental.png
-    ├── cenarios.md
-    ├── plano_de_testes.md
-    └── prompt_genai.txt
+    ├── mapa_mental.pdf
+    ├── Relatorio final de testes.pdf
+    ├── plano_de_testes.pdf
+    └── prompts.md
 ```
 
 ---
