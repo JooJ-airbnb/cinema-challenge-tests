@@ -4,4 +4,4 @@ robotframework-browser==17.3.0
 robotframework-seleniumlibrary==6.2.0
 pytest==8.3.3
 requests==2.32.3
-playwright==1.47.2
+playwright==1.47.0
