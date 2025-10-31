@@ -3,7 +3,7 @@ Library    RequestsLibrary
 Library    Collections
 Library    BuiltIn
 
-Resource    ../variables/env_variabless
+Resource    ../variables/env_variables.robot
 
 *** Keywords ***
 
