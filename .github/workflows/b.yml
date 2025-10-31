@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Baixar código do repositório
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Instalar Python e bibliotecas
         uses: actions/setup-python@v4
@@ -28,7 +28,7 @@ jobs:
           robot -d results tests/
 
       - name: Salvar relatórios
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Relatorios
           path: results
