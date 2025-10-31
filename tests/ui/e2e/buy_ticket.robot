@@ -1,9 +1,8 @@
 *** Settings ***
-Library Browser
-Resource ../resources_ui.robot
-Resource ../pages/HomePage.robot
-Resource ../pages/CheckoutPage.robot
-
+Library    Browser
+Resource    ../resources/resources_ui.robot
+Resource    ../pages/HomePage.robot
+Resource    ../pages/CheckoutPage.robot
 
 *** Test Cases ***
 Fluxo Completo — Comprar Ingresso
